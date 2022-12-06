@@ -8,10 +8,14 @@ Sulla base di queste informazioni dovrà calcolare il prezzo totale del bigliett
 */
 
 
-//1- targhetizzo l'elemento in pagina
+//1- targhetizzo prendo gli elementi in pagina
 const button = document.getElementById("button");
 
 const finalPrice = document.getElementById("target");
+
+const tripPrice = document.getElementById("trip-price");
+
+const passN = document.getElementById("pasenger-name");
 
 //2- chido all'utente il numero di chilometri che deve percorrere 
 
@@ -28,6 +32,8 @@ button.addEventListener('click', function() {
     //prendo i value dalla pagina
     const tripKm = parseInt(kms.value)
     const pasengerAge = parseInt(age.value)
+    const pasengerName = passN.value.trim()
+    
     //calcolo il prezzo del viaggio sapendo che costa (0.21€) al chilometro
     const pricePerKm = 0.21;
     
@@ -66,12 +72,14 @@ button.addEventListener('click', function() {
         discontedPrice = discontedPrice.toFixed(2)
     }
     
-    finalPrice.innerText = `in base alla tua età di ${pasengerAge} ed hai chilometri da percorrere "${tripKm}" il prezzo del biglietto e di ${discontedPrice}€`
+    tripPrice.innerText = `${discontedPrice} €`
+    passN.innerText = pasengerName
+    console.log(pasengerName)
 }else {
-    finalPrice.innerText = "l'eta ed i chilometri devono essere numeri (ricarica la pagina)"
+    finalPrice.innerText ="devi dichiarare l'età ed i chilometri da percorrere"
 }
 
 });
-//console.log( discontedPrice);
+
 
 
