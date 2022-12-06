@@ -17,6 +17,8 @@ const tripPrice = document.getElementById("trip-price");
 
 const passN = document.getElementById("pasenger-name");
 
+const passenger = document.getElementById("pasenger")
+
 //2- chido all'utente il numero di chilometri che deve percorrere 
 
 const kms = document.getElementById("kms");
@@ -73,8 +75,8 @@ button.addEventListener('click', function() {
     }
     
     tripPrice.innerText = `${discontedPrice} €`
-    passN.innerText = pasengerName
-    console.log(pasengerName)
+    passenger.innerText = pasengerName
+   
 }else {
     finalPrice.innerText ="devi dichiarare l'età ed i chilometri da percorrere"
 }
