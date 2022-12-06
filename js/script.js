@@ -19,6 +19,8 @@ const passN = document.getElementById("pasenger-name");
 
 const passenger = document.getElementById("pasenger")
 
+const cancel = document.getElementById("cancel")
+
 //2- chido all'utente il numero di chilometri che deve percorrere 
 
 const kms = document.getElementById("kms");
@@ -81,6 +83,11 @@ button.addEventListener('click', function() {
     finalPrice.innerText ="devi dichiarare l'età ed i chilometri da percorrere"
 }
 
+});
+
+cancel.addEventListener('click' , function () {
+
+    history.go(0)
 });
 
 
