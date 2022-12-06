@@ -14,78 +14,81 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="container">
-        <div class="row">
-            <div class="col-12 text-center">
-                <h1 class="p-4">CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
-            </div>
-        </div>
-        <div class="row d-flex justify-content-around">
-            <div class="col-4">
-                <h4>Nome e Cognome</h4>
-                <input type="text" id="pasenger-name">
-            </div>
 
-            <div class="col-4">
-                <h4>KM da percorrere</h4>
-                <input type="number" id="kms" min="1">
-            </div>
-
-            <div class="col-4">
-                <h4>Età</h4>
-                <input type="number" id="age" min="1">
-            </div>
-        </div>
-       
-        <div class="row justify-content-center pt-5">
-            <div class="col-4 ">
-                <button id="button" class="me-3 rounded-2">Genera</button>
-                <button class=" rounded-2" type="reset">Annulla</button>
-            </div>
-        </div>
-       
-    </div>
+    <section>
+        <h1 class="p-4 text-center text-white">CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
         
-       
-    <div class="container"> 
-        <div class="row">
-            <div class="col-12">
-                <h2>Dettagli passeggero</h2>
+        <div class="container py-4 rounded-2">
+            
+            <div class="row d-flex justify-content-around">
+                <div class="col-2">
+                    <h5 class="mb-3">Nome e Cognome</h5>
+                    <input type="text" id="pasenger-name">
+                </div>
+    
+                <div class="col-2">
+                    <h5 class="mb-3">KM da percorrere</h5>
+                    <input type="number" id="kms" min="1">
+                </div>
+    
+                <div class="col-2">
+                    <h5 class="mb-3">Età</h5>
+                    <input type="number" id="age" min="1">
+                </div>
             </div>
+           
+            <div class="row justify-content-center pt-5">
+                <div class="col-4 text-center">
+                    <button id="button" class="me-3 rounded-2">Genera</button>
+                    <button class=" rounded-2" type="reset">Annulla</button>
+                </div>
+            </div>
+           
         </div>
-        <div class="row">
-            <div class="col-4">
-
-                <h1 id="pasenger"></h1>
+            
+           <h2 class="text-center text-white py-4">IL TUO BIGLIETTO</h2>
+        <div class="container py-4"> 
+            <div class="row">
+                <div class="col-12">
+                    <h2>Dettagli passeggero</h2>
+                </div>
             </div>
+            <div class="row">
+                <div class="col-4">
+                    <div class="pas-info">
+                        <h1 id="pasenger" class="text-wite"></h1>
 
-            <div class="col-2">
-                <h5>Offerta</h5>
-                <h6>Biglietto standard</h6>
-
+                    </div>
+                </div>
+    
+                <div class="col-2">
+                    <h5 class="mb-5">Offerta</h5>
+                    <h6>Biglietto standard</h6>
+    
+                </div>
+    
+                <div class="col-2">
+                    <h5 class="mb-5">Carrozza</h5>
+                    <h6>5</h6>
+                </div>
+    
+                <div class="col-2">
+                    <h5 class="mb-5">Codice CP</h5> 
+                    <h6>98222</h6>
+                </div>
+                <div class="col-2">
+                    <h5 class="mb-5">Costo biglietto</h5>
+                    <h6 id="trip-price"></h6>
+                </div>
             </div>
-
-            <div class="col-2">
-                <h5>Carrozza</h5>
-                <h6>5</h6>
-            </div>
-
-            <div class="col-2">
-                <h5>Codice CP</h5> 
-                <h6>98222</h6>
-            </div>
-            <div class="col-2">
-                <h5>Costo biglietto</h5>
-                <h6 id="trip-price"></h6>
-            </div>
+    
+    
+            
+          
+    
+    
         </div>
-
-
-        
-      
-
-
-    </div>
+    </section>
        
         
         
